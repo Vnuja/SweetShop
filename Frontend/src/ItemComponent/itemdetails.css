@@ -1,0 +1,165 @@
+/* Container Styling */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  animation: backgroundPulse 5s infinite alternate; /* Simple background pulse effect */
+}
+
+@keyframes backgroundPulse {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.1); }
+}
+
+.showitems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 182, 193, 0.9); /* Light pink background with opacity */
+  min-height: 100vh;
+  animation: floatUp 2s ease-in-out;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+#add-product-btn {
+  position: absolute;
+  background-color: #ff69b4; /* Hot pink */
+  padding: 10px;
+  color: white;
+  top: 10%;
+  left: 90%;
+  border-radius: 10px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+#add-product-btn:hover {
+  background-color: #ff1493; /* Deep pink */
+  transform: scale(1.05);
+}
+
+/* Search Button Container */
+.searchbtn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Search Input Styling */
+.in {
+  padding: 10px;
+  border: 2px solid #ff69b4; /* Hot pink */
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+  margin-right: 10px;
+}
+
+.in:focus {
+  border-color: #ff1493; /* Deep pink */
+  background-color: #fff5f7; /* Light pink background on focus */
+}
+
+/* Search Button Styling */
+#search-btn {
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Hot pink */
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 1%;
+}
+
+#search-btn:hover {
+  background-color: #ff1493; /* Deep pink */
+  transform: translateY(-3px);
+}
+
+/* Table Styling */
+table {
+  width: 70%;
+  max-width: 10000px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: floatUp 2s ease-in-out;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+table th {
+  background-color: #ff69b4; /* Hot pink header */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+table tr:hover {
+  background-color: #ffb6c1; /* Light pink hover effect */
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Action Links and Buttons */
+table a, table button {
+  margin-right: 10px;
+  color: #ff1493; /* Edit for links */
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+table a:hover, table button:hover {
+  text-decoration: underline;
+}
+
+table button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #a81b1b; /* Delete for buttons */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+table button:hover {
+  text-decoration: underline;
+}
+
+/* Generate PDF Button */
+button {
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Hot pink for button */
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff1493; /* Deep pink */
+  transform: translateY(-3px);
+}
+

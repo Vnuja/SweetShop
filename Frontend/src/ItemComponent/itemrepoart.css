@@ -1,0 +1,99 @@
+.repoart {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out; /* Simple fade-in animation */
+}
+
+h3 {
+  color: #000000; /* Black header color for better contrast */
+}
+
+.pdf-content {
+  display: flex;
+  flex-direction: column; /* Change to column for vertical layout */
+  align-items: center; /* Center align items */
+  padding: 20px;
+}
+
+.chart-container {
+  flex: 1;
+  max-width: 100%; /* Full width for chart */
+  margin-bottom: 20px; /* Space below the chart */
+  max-height: 500px; /* Increased height for the chart */
+}
+
+.cards-container {
+  width: 100%; /* Full width for cards */
+  display: flex;
+  flex-direction: row; /* Keep the cards in a row */
+  justify-content: center; /* Center align cards */
+  gap: 20px;
+  margin-top: 20px; /* Space above the cards */
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 8px; /* Slightly reduced padding for smaller cards */
+  background-color: #ffe9ec;
+  border-radius: 4px; /* Rounded corners for cards */
+  transition: transform 0.3s; /* Added transition for hover effect */
+  flex: 1; /* Make cards flexible */
+  min-width: 120px; /* Minimum width for cards */
+  max-width: 150px; /* Maximum width for cards */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+.product-name {
+  font-size: 16px; /* Reduced font size for product name */
+  font-weight: bold;
+  margin-bottom: 8px; /* Reduced margin for spacing */
+  color: #333; /* Dark text color for contrast */
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #cde9f7;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+p {
+  font-size: 16px; /* Slightly reduced font size for paragraphs */
+  color: #666;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+

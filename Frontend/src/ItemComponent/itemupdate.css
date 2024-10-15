@@ -1,0 +1,109 @@
+.item-update {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 5%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out; /* Simple fade-in animation */
+}
+
+.item-update h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000; /* Black text for contrast */
+  font-family: 'Arial', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add some shadow for better readability */
+}
+
+.item-update label {
+  display: block;
+  margin-bottom: 8px;
+  color: #700e6b; /* Purple label color */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.item-update input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #fff; /* White border */
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+}
+
+.item-update input[type="text"]:focus {
+  border-color: #ff69b4; /* Hot pink border on focus */
+  outline: none;
+  transform: scale(1.05); /* Slight scale effect on focus */
+}
+
+/* Quantity controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-btn {
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff69b4; /* Hot pink button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for scale */
+}
+
+.quantity-btn:disabled {
+  background-color: #c71585; /* Darker pink when disabled */
+}
+
+.quantity-btn:hover:not(:disabled) {
+  background-color: #ff1493; /* Deep pink on hover */
+  transform: scale(1.05); /* Slight grow on hover */
+}
+
+.item-update button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff69b4; /* Hot pink button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for scale */
+}
+
+.item-update button:hover {
+  background-color: #ff1493; /* Deep pink on hover */
+  transform: scale(1.05); /* Slight grow on hover */
+}
+
+.item-update button:active {
+  background-color: #c71585; /* Different shade on active */
+}
+
+.item-update button:focus {
+  outline: none;
+}
+
+.item-update br {
+  margin-bottom: 15px;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
