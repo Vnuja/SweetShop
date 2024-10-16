@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css'; 
 
-const Header = () => {
+const Header1 = () => {
   return (
     <header className="header">
       <div className="header__logo">

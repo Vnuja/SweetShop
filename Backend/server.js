@@ -29,6 +29,8 @@ app.use("/attendance", attendanceRoutes);
 app.use("/leaves", leavesRoutes);
 app.use("/menu", menuRoutes); 
 app.use("/supplier", supplierRoutes); 
+app.use("/api/orders", routes);
+
 
 supplierRoutes
 app.listen(PORT, () => {
